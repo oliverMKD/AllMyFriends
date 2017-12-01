@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oli.allmyfriends.Main4Activity"
+    android:background="@color/colorPrimaryDark">
+
+    <Button
+        android:id="@+id/kopcezakonekcija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_centerInParent="true"
+        android:text="Check your internet connection"/>
+
+    <TextView
+        android:id="@+id/txtKonekcija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kopcezakonekcija"
+        android:background="@drawable/text"
+        android:padding="10dp"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+       />/>
+
+    <Button
+        android:id="@+id/kopceNazad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Back"
+        android:drawableLeft="@drawable/left_arrow"/>
+
+
+</RelativeLayout>

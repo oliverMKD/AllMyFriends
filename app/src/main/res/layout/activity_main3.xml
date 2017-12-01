@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oli.allmyfriends.Main3Activity"
+    android:background="@color/colorPrimary">
+
+    <Spinner
+        android:id="@+id/spiner"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <Button
+        android:id="@+id/kopceEDIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/spiner"
+        android:text="EDIT USER"/>
+    <Button
+        android:id="@+id/kopceADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/spiner"
+        android:layout_below="@+id/kopceEDIT"
+        android:text="ADD USER"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/kopceADD"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:id="@+id/aaaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorBela">
+
+        <TextView
+            android:id="@+id/povtorenIzbor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Gender"
+            android:textSize="20dp"
+            />
+        <RadioGroup
+            android:layout_below="@+id/povtorenIzbor"
+            android:id="@+id/radiogrupa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <RadioButton
+            android:id="@+id/CheckPakMasko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:layout_below="@+id/radiogrupa"
+            />
+        <RadioButton
+            android:id="@+id/CheckPakZensko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:layout_toRightOf="@+id/CheckPakMasko"
+
+            />
+        </RadioGroup>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/aaaaa"
+            >
+        <ImageView
+            android:id="@+id/slikavora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/colorBela"/>
+
+        <TextView
+            android:id="@+id/ImePrezime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_gravity="right|center"
+            android:background="@color/colorsiva"
+
+            />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/konekcija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/kopceProverikonekcija"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/text"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/kopceProverikonekcija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="CHECK INTERNET CONNECTION"
+            android:background="@color/colorAccent"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AllMyFriends</string>
+    <string name="checkinternet">Check internet connection</string>
+    <string name="internetconnected">Internet is connected fine!</string>
+    <string name="backact4">Back</string>
+</resources>

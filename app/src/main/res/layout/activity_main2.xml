@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    tools:context="com.oli.allmyfriends.Main2Activity">
+
+    <TextView
+        android:id="@+id/Txtview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD USER DETAILS"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editPrvo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAME"
+        android:layout_below="@+id/Txtview1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/text"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/editVtoro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="LASTNAME"
+        android:layout_below="@+id/editPrvo"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/text"
+        android:padding="10dp"
+
+
+        />
+    <EditText
+        android:id="@+id/editTreto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="USERNAME"
+        android:layout_below="@+id/editVtoro"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/text"
+        android:padding="10dp"
+
+        />
+    <TextView
+        android:id="@+id/Txtview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTreto"
+        android:text="Choose your gender :"/>
+    <RadioButton
+        android:id="@+id/M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Txtview2"
+        android:text="M"
+        />
+    <RadioButton
+        android:id="@+id/F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Txtview2"
+        android:layout_toRightOf="@+id/M"
+        android:text="F"
+        />
+    <Button
+        android:id="@+id/kopceNEXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="NEXT"
+        android:drawableRight="@drawable/right_arrow"
+       />
+
+</RelativeLayout>

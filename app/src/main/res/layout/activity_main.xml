@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.oli.allmyfriends.MainActivity">
+
+    <ImageView
+        android:id="@+id/slikaprva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/kopceLOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slikaprva"
+        android:layout_marginTop="140dp"
+        android:text="LOG IN"
+        android:background="@color/colorAccent"/>
+    <Button
+        android:id="@+id/kopceGUEST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kopceLOGIN"
+        android:hint="Log in as guest"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
