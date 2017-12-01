@@ -54,14 +54,7 @@ public class Main4Activity extends AppCompatActivity {
         finish();
     }
 }
-//    @Override
-//    protected void onPause() {
-//        if (receiver != null) {
-//            unregisterReceiver(receiver);
-//        }
-//        super.onPause();
-//    }
-//}
+
 
 
 
